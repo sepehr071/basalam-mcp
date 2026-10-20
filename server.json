@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.sepehr071/basalam-mcp",
   "title": "Basalam",
-  "description": "Unofficial read-only Basalam marketplace: search products, find the cheapest offers, shops, categories, reviews.",
+  "description": "Unofficial read-only Basalam marketplace: search products, cheapest offers, shops, reviews.",
   "repository": {
     "url": "https://github.com/sepehr071/basalam-mcp",
     "source": "github"
