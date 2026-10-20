@@ -1,0 +1,105 @@
+{
+ "backend_http_status_code": 200,
+ "has_next": true,
+ "has_reviews_with_photo": true,
+ "limit": 5,
+ "offset": 0,
+ "product_reviews_group": {
+  "groups": {
+   "1": 270,
+   "2": 169,
+   "3": 531,
+   "4": 1385,
+   "5": 5527
+  },
+  "stars_average": 4.4,
+  "stars_total_count": 7882
+ },
+ "result_count": 5,
+ "reviews": [
+  {
+   "answers": [],
+   "attachments": {
+    "photos": [],
+    "video": null
+   },
+   "createdAt": "2026-10-19T22:30:45",
+   "description": "خکبه",
+   "dislikeCount": 0,
+   "hashId": "0XVEYD",
+   "history_count": 1,
+   "id": 34022775,
+   "invoice_item_id": null,
+   "isDislikedByCurrentUser": false,
+   "isLikedByCurrentUser": false,
+   "isPost": false,
+   "isPosted": false,
+   "isPublic": true,
+   "likeCount": 1,
+   "parentId": null,
+   "productId": "1410736",
+   "reasonIds": [],
+   "reason_ids": [],
+   "star": 4,
+   "status": 6411,
+   "updatedAt": "2026-10-19T22:30:45",
+   "user": {
+    "hash_id": "neeYWO",
+    "id": 3847503,
+    "name": "امین",
+    "photo": null,
+    "vendor": null
+   },
+   "user_id": 3847503,
+   "variation_metadata": []
+  },
+  {
+   "answers": [],
+   "attachments": {
+    "photos": [],
+    "video": null
+   },
+   "createdAt": "2026-10-18T14:42:10",
+   "description": "به اندازه پولش می ارزه. فکر نکنید ارزون میخرید.",
+   "dislikeCount": 0,
+   "hashId": "YJynLy",
+   "history_count": 1,
+   "id": 33966770,
+   "invoice_item_id": null,
+   "isDislikedByCurrentUser": false,
+   "isLikedByCurrentUser": false,
+   "isPost": false,
+   "isPosted": false,
+   "isPublic": true,
+   "likeCount": 0,
+   "parentId": null,
+   "productId": "1410736",
+   "reasonIds": [],
+   "reason_ids": [],
+   "star": 1,
+   "status": 6408,
+   "updatedAt": "2026-10-18T14:42:10",
+   "user": {
+    "hash_id": "A8A3Va",
+    "id": 14131046,
+    "name": "mortezabayanloo",
+    "photo": null,
+    "vendor": null
+   },
+   "user_id": 14131046,
+   "variation_metadata": []
+  }
+ ],
+ "total_count": 7882,
+ "vendor_reviews_group": {
+  "groups": {
+   "1": 730,
+   "2": 440,
+   "3": 1330,
+   "4": 3850,
+   "5": 15816
+  },
+  "stars_average": 4.5,
+  "stars_total_count": 22166
+ }
+}

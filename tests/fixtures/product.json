@@ -1,0 +1,327 @@
+{
+ "id": 56850315,
+ "title": "عسل شان روشن نیم کیلویی اورامان تخت",
+ "summary": null,
+ "created_at": "2026-08-28 10:11:11",
+ "updated_at": "2026-10-19 11:35:49",
+ "barcode": null,
+ "net_weight": 500,
+ "packaged_weight": 600,
+ "preparation_day": 0,
+ "description": "با بهترین کیفیت در خدمت شماییم\nاین عسل علاوه بر خواص مشترک با عسل صاف شده خواص زیادی از جمله کاهش خطر عفونت و سلامت قلب و کبد و تقویت بدن بدلیل وجود مواد معدنی دارد و یک گزینه عالی برای سفره مردم عزیز ایران است\nشانه عسل همچنین حاوی موم زنبور عسل است که اسیدهای چرب زنجیره بلند و الکل های مفید برای قل",
+ "price": 13500000,
+ "primary_price": 15000000,
+ "status": {
+  "id": 2976,
+  "title": "در دسترس"
+ },
+ "location_deployment": {
+  "id": 3017,
+  "title": "ارسال توسط غرفه‌دار"
+ },
+ "inventory": 25,
+ "shipping_area": null,
+ "wholesale_prices": null,
+ "photos": [
+  {
+   "id": 397790643,
+   "extra_small": "https://statics.basalam.com/public-241/users/k8brdV/08-26/ILbcdeWEZT7MPs8fKXNq7j0Vtz9rWyazoppZF9F7LV3NOTMJka.jpg_50X50X70.jpg",
+   "small": "https://statics.basalam.com/public-241/users/k8brdV/08-26/ILbcdeWEZT7MPs8fKXNq7j0Vtz9rWyazoppZF9F7LV3NOTMJka.jpg_256X256X70.jpg",
+   "medium": "https://statics.basalam.com/public-241/users/k8brdV/08-26/ILbcdeWEZT7MPs8fKXNq7j0Vtz9rWyazoppZF9F7LV3NOTMJka.jpg_512X512X70.jpg",
+   "large": "https://statics.basalam.com/public-241/users/k8brdV/08-26/ILbcdeWEZT7MPs8fKXNq7j0Vtz9rWyazoppZF9F7LV3NOTMJka.jpg_800X800X70.jpg"
+  }
+ ],
+ "net_weight_decimal": 500.0,
+ "unit_quantity": 500.0,
+ "unit_price": null,
+ "shipping_data": {
+  "illegal_for_iran": false,
+  "illegal_for_same_city": false
+ },
+ "unit_type": {
+  "id": 6306,
+  "title": "گرم"
+ },
+ "packaging_dimensions": null,
+ "is_wholesale": false,
+ "category": {
+  "id": 172,
+  "title": "عسل",
+  "parent_id": 20,
+  "placeholder": null,
+  "unit_type_id": {
+   "id": 5060,
+   "title": "گرم",
+   "parent_id": 5059
+  },
+  "max_preparation_days": 3,
+  "parent": {
+   "id": 20,
+   "title": "عسل و فراورده های عسل",
+   "parent_id": 1,
+   "placeholder": null,
+   "unit_type_id": null,
+   "max_preparation_days": null,
+   "parent": {
+    "id": 1,
+    "title": "مواد غذایی",
+    "parent_id": 0,
+    "placeholder": null,
+    "unit_type_id": null,
+    "max_preparation_days": null
+   }
+  }
+ },
+ "category_list": [
+  {
+   "id": 7377,
+   "title": "عسل چهل گیاه",
+   "slug": "عسل-چهل-گیاه"
+  },
+  {
+   "id": 7411,
+   "title": "عسل پنبه",
+   "slug": "عسل-پنبه"
+  },
+  {
+   "id": 670,
+   "title": "عسل آویشن",
+   "slug": "عسل-آویشن"
+  },
+  {
+   "id": 671,
+   "title": "عسل اقاقیا",
+   "slug": "عسل-اقاقیا"
+  },
+  {
+   "id": 672,
+   "title": "عسل بره موم",
+   "slug": "عسل-بره-موم"
+  },
+  {
+   "id": 673,
+   "title": "عسل بهار نارنج",
+   "slug": "عسل-بهار-نارنج"
+  },
+  {
+   "id": 674,
+   "title": "عسل چند گیاه",
+   "slug": "عسل-چند-گیاه"
+  },
+  {
+   "id": 675,
+   "title": "عسل خارشتر",
+   "slug": "عسل-خارشتر"
+  },
+  {
+   "id": 676,
+   "title": "عسل خام",
+   "slug": "عسل-خام"
+  },
+  {
+   "id": 677,
+   "title": "عسل دیابتی",
+   "slug": "عسل-دیابتی"
+  },
+  {
+   "id": 678,
+   "title": "عسل رس بسته",
+   "slug": "عسل-رس-بسته"
+  },
+  {
+   "id": 679,
+   "title": "عسل زرشک",
+   "slug": "عسل-زرشک"
+  },
+  {
+   "id": 680,
+   "title": "عسل زعفران",
+   "slug": "عسل-زعفران"
+  },
+  {
+   "id": 681,
+   "title": "عسل زول",
+   "slug": "عسل-زول"
+  },
+  {
+   "id": 682,
+   "title": "عسل سبلان",
+   "slug": "عسل-سبلان"
+  },
+  {
+   "id": 683,
+   "title": "عسل سدر",
+   "slug": "عسل-سدر"
+  },
+  {
+   "id": 684,
+   "title": "عسل سفید",
+   "slug": "عسل-سفید"
+  },
+  {
+   "id": 685,
+   "title": "عسل سیاه",
+   "slug": "عسل-سیاه"
+  },
+  {
+   "id": 686,
+   "title": "عسل سیاه دانه",
+   "slug": "عسل-سیاه-دانه"
+  },
+  {
+   "id": 687,
+   "title": "عسل شاه بلوط",
+   "slug": "عسل-شاه-بلوط"
+  },
+  {
+   "id": 688,
+   "title": "عسل شهد",
+   "slug": "عسل-شهد"
+  },
+  {
+   "id": 689,
+   "title": "عسل عناب",
+   "slug": "عسل-عناب"
+  },
+  {
+   "id": 690,
+   "title": "عسل قنقال",
+   "slug": "عسل-قنقال"
+  },
+  {
+   "id": 691,
+   "title": "عسل کنار",
+   "slug": "عسل-کنار"
+  },
+  {
+   "id": 692,
+   "title": "عسل کوهی",
+   "slug": "عسل-کوهی"
+  },
+  {
+   "id": 693,
+   "title": "عسل گشنیز",
+   "slug": "عسل-گشنیز"
+  },
+  {
+   "id": 694,
+   "title": "عسل گون",
+   "slug": "عسل-گون"
+  },
+  {
+   "id": 695,
+   "title": "عسل مرکبات",
+   "slug": "عسل-مرکبات"
+  },
+  {
+   "id": 696,
+   "title": "عسل وحشی",
+   "slug": "عسل-وحشی"
+  },
+  {
+   "id": 697,
+   "title": "عسل یونجه",
+   "slug": "عسل-یونجه"
+  }
+ ],
+ "attribute_groups": [
+  {
+   "title": "عمومی",
+   "attributes": [
+    {
+     "id": 273,
+     "value": "بیشتر برای خواص درمانی مصرف میشود",
+     "selected_values": null,
+     "title": "مناسب برای",
+     "unit": "",
+     "type": {
+      "id": 3011,
+      "title": "نویسه",
+      "parent_id": 3008,
+      "description": null
+     },
+     "required": false,
+     "selected_values_list": null
+    }
+   ]
+  }
+ ],
+ "attributes": [
+  {
+   "id": 60035490,
+   "key": "مناسب برای",
+   "value": "بیشتر برای خواص درمانی مصرف میشود"
+  }
+ ],
+ "navigation": {
+  "slug": "honey",
+  "title": "عسل",
+  "categoryIds": [
+   172
+  ],
+  "parent": {
+   "slug": "breakfast",
+   "title": "برای صبحانه",
+   "categoryIds": [
+    16
+   ],
+   "parent": {
+    "slug": "food",
+    "title": "مواد غذایی",
+    "categoryIds": [
+     1
+    ]
+   }
+  }
+ },
+ "video": null,
+ "variants": null,
+ "revision": null,
+ "is_free_shipping": false,
+ "is_available": true,
+ "salesCount": 0,
+ "has_selectable_variation": false,
+ "is_product_for_revision": false,
+ "viewCount": 0,
+ "rating": 0,
+ "review_count": 0,
+ "discount": {
+  "rollback_at": "2026-10-21T23:59:00",
+  "discount_percent": 10.0,
+  "created_at": "2026-10-19T11:35:49"
+ },
+ "allow_category_change": false,
+ "vendor": {
+  "id": 1484831,
+  "title": "سوغات دیاری",
+  "identifier": "asalhowraman98",
+  "city": {
+   "id": 2535,
+   "title": "اورامان تخت",
+   "parent_id": 22,
+   "parent": {
+    "id": 22,
+    "title": "کردستان",
+    "parent_id": 2,
+    "description": null
+   }
+  },
+  "product_count": 50
+ },
+ "free_shipping": {
+  "result": false,
+  "meta_data": {
+   "limits": {
+    "to_iran": null,
+    "to_same_city": null
+   },
+   "illegals": {
+    "from_iran": false,
+    "from_same_city": false
+   }
+  }
+ },
+ "can_add_to_cart": true,
+ "is_saleable": true,
+ "is_showable": true
+}

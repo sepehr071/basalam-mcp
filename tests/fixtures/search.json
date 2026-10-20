@@ -1,0 +1,242 @@
+{
+ "meta": {
+  "count": 10000
+ },
+ "products": [
+  {
+   "IsAvailable": true,
+   "IsSaleable": true,
+   "_score": null,
+   "ads": {},
+   "available_shipping_zones": [
+    2
+   ],
+   "canAddToCart": true,
+   "categoryId": 0,
+   "categoryTitle": "عسل",
+   "clickCount": null,
+   "currentPromotion": {},
+   "fastBookMark": true,
+   "group_tag": "p_39072910",
+   "has_mlt": true,
+   "has_variation": true,
+   "has_video": true,
+   "id": 39072910,
+   "impression": null,
+   "indexedAt": "2026-10-16T19:27:05.860000",
+   "isFreeShipping": false,
+   "isVendorOnline": false,
+   "is_wholesale": false,
+   "mainAttribute": "15 گرم",
+   "matchType": "search",
+   "name": "عسل تک نفره ساشه ای برند شهدگل بیابان خرید مستقیم از تولید کننده،دارای سیب سلامت.خریددر سه وزن(ارسال رایگان با 2 م خرید)",
+   "navigation_id": 5036,
+   "new_categoryId": 172,
+   "photos": [],
+   "preparationDays": 2,
+   "price": 120000,
+   "primaryPrice": 120000,
+   "qcommerce_zones": [],
+   "rating": {
+    "average": 5,
+    "count": 6,
+    "signals": 6
+   },
+   "salampay_installments": [
+    2,
+    4,
+    6
+   ],
+   "salampay_tag": true,
+   "sales_count": 8,
+   "sales_count_week": 0,
+   "shipping_price_rate": 0,
+   "shipping_type": 4,
+   "status": {
+    "id": 2976,
+    "title": "در دسترس"
+   },
+   "stock": 1886,
+   "vendor": {
+    "cityId": 1888,
+    "freeShippingToIran": 7000000,
+    "freeShippingToSameCity": 0,
+    "has_delivery": false,
+    "id": 558356,
+    "identifier": "shahde_gole_biaban_honey",
+    "name": "عسل شهد گل بیابان 🐝زنبوردار نمونه فریدن🐝",
+    "owner": {
+     "city": "داران",
+     "hashId": "QEMV67",
+     "id": 8821560
+    },
+    "provinceId": 6,
+    "score": 1,
+    "status": {
+     "id": 2987,
+     "title": "فعال"
+    },
+    "statusId": 2987,
+    "username": "جمشید ناظمی/دنیای محصولات زنبورعسل"
+   },
+   "video": {
+    "PRIMARY": "https://statics.basalam.com/public-173/video/product/QEMV67/02-26/9iE3S0fNtmv6ewtBh1t7W4i8jJAn5zZTiB7yldaaNnDIkVtVUK.mp4"
+   },
+   "weight": 15
+  },
+  {
+   "IsAvailable": true,
+   "IsSaleable": true,
+   "_score": null,
+   "ads": {},
+   "available_shipping_zones": [
+    2
+   ],
+   "canAddToCart": true,
+   "categoryId": 0,
+   "categoryTitle": "عسل",
+   "clickCount": null,
+   "currentPromotion": {},
+   "fastBookMark": true,
+   "group_tag": "p_38264432",
+   "has_mlt": true,
+   "has_variation": true,
+   "has_video": true,
+   "id": 38264432,
+   "impression": null,
+   "indexedAt": "2026-10-19T13:33:39.823000",
+   "isFreeShipping": false,
+   "isVendorOnline": false,
+   "is_wholesale": false,
+   "mainAttribute": "15 گرم",
+   "matchType": "search",
+   "name": "عسل ساشه تک نفره 15 ، 20 و 25 گرم ارسال به تعداد دلخواه(ارسال رایگان با خرید 2م از غرفه)",
+   "navigation_id": 5036,
+   "new_categoryId": 172,
+   "photos": [],
+   "preparationDays": 2,
+   "price": 120000,
+   "primaryPrice": 120000,
+   "qcommerce_zones": [],
+   "rating": {
+    "average": 4.7,
+    "count": 23,
+    "signals": 23
+   },
+   "salampay_installments": [
+    2,
+    3,
+    4
+   ],
+   "salampay_tag": true,
+   "sales_count": 36,
+   "sales_count_week": 2,
+   "shipping_price_rate": 702.0833333333333,
+   "shipping_type": 4,
+   "status": {
+    "id": 2976,
+    "title": "در دسترس"
+   },
+   "stock": 29264,
+   "vendor": {
+    "cityId": 1888,
+    "freeShippingToIran": 7000000,
+    "freeShippingToSameCity": 0,
+    "has_delivery": false,
+    "id": 858698,
+    "identifier": "fereydanhoney",
+    "name": "دهکده عسل فریدن",
+    "owner": {
+     "city": "داران",
+     "hashId": "eOwV8G",
+     "id": 4190264
+    },
+    "provinceId": 6,
+    "score": 1,
+    "status": {
+     "id": 2987,
+     "title": "فعال"
+    },
+    "statusId": 2987,
+    "username": "ابوذر ناظمی"
+   },
+   "video": {
+    "PRIMARY": "https://statics.basalam.com/public-185/video/product/eOwV8G/04-20/xx9SvYrkL9s8TzR8AUAyzL2gs2ONcS159DbtRPYEuR9kY2A0Rt.mp4"
+   },
+   "weight": 15
+  },
+  {
+   "IsAvailable": false,
+   "IsSaleable": true,
+   "_score": null,
+   "ads": {},
+   "available_shipping_zones": [
+    2
+   ],
+   "canAddToCart": true,
+   "categoryId": 0,
+   "categoryTitle": "فرآورده های عسل",
+   "clickCount": null,
+   "currentPromotion": {},
+   "fastBookMark": true,
+   "group_tag": "p_32529152",
+   "has_mlt": true,
+   "has_variation": false,
+   "has_video": false,
+   "id": 32529152,
+   "impression": null,
+   "indexedAt": "2026-09-12T13:20:44.321000",
+   "isFreeShipping": false,
+   "isVendorOnline": false,
+   "is_wholesale": false,
+   "mainAttribute": "10 گرم",
+   "matchType": "search",
+   "name": "عسل با عصاره زعفران",
+   "navigation_id": 5403,
+   "new_categoryId": 173,
+   "photos": [],
+   "preparationDays": 2,
+   "price": 300000,
+   "primaryPrice": 300000,
+   "rating": {
+    "average": 0,
+    "count": 0,
+    "signals": 0
+   },
+   "salampay_installments": [],
+   "salampay_tag": false,
+   "sales_count": 0,
+   "sales_count_week": 0,
+   "shipping_type": 4,
+   "status": {
+    "id": 2976,
+    "title": "در دسترس"
+   },
+   "stock": 1058,
+   "vendor": {
+    "cityId": 1948,
+    "freeShippingToIran": null,
+    "freeShippingToSameCity": null,
+    "has_delivery": false,
+    "id": 1316468,
+    "identifier": "atarimoon-online",
+    "name": "عطاریمون آنلاین",
+    "owner": {
+     "city": "نجف آباد",
+     "hashId": "BBwdQ",
+     "id": 1875876
+    },
+    "provinceId": 6,
+    "score": null,
+    "status": {
+     "id": 2987,
+     "title": "فعال"
+    },
+    "statusId": 2987,
+    "username": "مهتاب شریعتی"
+   },
+   "video": null,
+   "weight": 10
+  }
+ ]
+}
