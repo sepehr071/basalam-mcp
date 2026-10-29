@@ -29,6 +29,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/sepehr071/basalam-mcp"
 Issues = "https://github.com/sepehr071/basalam-mcp/issues"
+Website = "https://mcpfarsi.ir/servers/basalam/"
 
 [project.scripts]
 basalam-mcp = "basalam_mcp.server:main"
