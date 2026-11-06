@@ -11,18 +11,14 @@ from .registry import clip, tool
 
 SORTS = {"relevance": "rank", "bestselling": "sales", "cheapest": "price", "expensive": "pricedesc", "newest": "newest"}
 
-Query = Annotated[
-    str, Field(min_length=1, pattern=r"\S", description="Search words, Persian matches best, e.g. 'عسل طبیعی'.")
-]
-MinPrice = Annotated[int | None, Field(ge=0, description="Lowest price in Toman, e.g. 100000.")]
-MaxPrice = Annotated[int | None, Field(ge=0, description="Highest price in Toman, e.g. 500000.")]
-CategoryId = Annotated[
-    int | None, Field(ge=1, description="Category id from bs_categories (any level), e.g. 172 for honey.")
-]
-FreeShipping = Annotated[bool, Field(description="Only products with free shipping to the whole country.")]
-HasDiscount = Annotated[bool, Field(description="Only products with a discount or coupon.")]
-TopVendors = Annotated[bool, Field(description="Only products from top-rated shops (غرفه برتر).")]
-Installments = Annotated[bool, Field(description="Only products that can be bought in installments (قسطی).")]
+Query = Annotated[str, Field(min_length=1, pattern=r"\S", description="Persian words, e.g. 'عسل طبیعی'.")]
+MinPrice = Annotated[int | None, Field(ge=0, description="Toman, e.g. 100000.")]
+MaxPrice = Annotated[int | None, Field(ge=0, description="Toman, e.g. 500000.")]
+CategoryId = Annotated[int | None, Field(ge=1, description="Id from bs_categories, any level.")]
+FreeShipping = Annotated[bool, Field(description="Only free shipping.")]
+HasDiscount = Annotated[bool, Field(description="Only discounted.")]
+TopVendors = Annotated[bool, Field(description="Only top-rated shops.")]
+Installments = Annotated[bool, Field(description="Only installment-payable.")]
 
 
 def toman(rial: float | int | None) -> int | None:
@@ -110,7 +106,7 @@ async def run_search(**kw: Any) -> tuple[list[dict[str, Any]], int]:
 async def bs_search(
     query: Query,
     sort: Annotated[
-        Literal["relevance", "bestselling", "cheapest", "expensive", "newest"], Field(description="Result order.")
+        Literal["relevance", "bestselling", "cheapest", "expensive", "newest"], Field(description="Order.")
     ] = "relevance",
     min_price: MinPrice = None,
     max_price: MaxPrice = None,
@@ -120,15 +116,11 @@ async def bs_search(
     top_vendors: TopVendors = False,
     installments: Installments = False,
     page: Annotated[int, Field(ge=1, le=200, description="Page number, 1-based.")] = 1,
-    limit: Annotated[
-        int, Field(ge=1, le=30, description="Products per page (max 30, keeps the reply under 15 KB).")
-    ] = 12,
+    limit: Annotated[int, Field(ge=1, le=30, description="Products per page.")] = 12,
 ) -> dict[str, Any]:
     """Search Basalam products and return a page of cards with prices in Toman.
 
-    Use for browsing a product type; the filters and sort run on the server. To rank by real price use
-    bs_find_cheapest, for one product bs_product, for one shop's catalog bs_vendor_products. A product's link is
-    https://basalam.com/p/<id>; neighbouring pages can repeat a few products.
+    To rank by real price use bs_find_cheapest. Link: https://basalam.com/p/<id>; pages can repeat a few products.
     """
     cards, total = await run_search(
         query=query,
@@ -154,22 +146,19 @@ async def bs_find_cheapest(
         int,
         Field(
             ge=0,
-            description="Lowest price in Toman. Default 5000 hides sample or filler listings that cost a few hundred.",
+            description="Lowest price in Toman; 5000 hides filler listings.",
         ),
     ] = 5000,
     max_price: MaxPrice = None,
     category_id: CategoryId = None,
     free_shipping: FreeShipping = False,
     top_vendors: TopVendors = False,
-    rating_min: Annotated[
-        float, Field(ge=0, le=5, description="Drop products rated below this; above 0 also drops unrated ones.")
-    ] = 0,
+    rating_min: Annotated[float, Field(ge=0, le=5, description="Min rating; above 0 drops unrated.")] = 0,
     limit: Annotated[int, Field(ge=1, le=30, description="Offers to return.")] = 10,
 ) -> dict[str, Any]:
     """List the cheapest in-stock offers for a query, cheapest first, prices in Toman.
 
-    Reads the server's price-ascending sort (two pages of 48), drops out-of-stock items and, with rating_min,
-    low-rated ones. Raise min_price when results are still accessories; narrow with category_id from bs_categories.
+    Drops out-of-stock items. Raise min_price if results are still accessories; narrow with category_id.
     """
     offers: list[dict[str, Any]] = []
     total = 0
@@ -211,21 +200,19 @@ def _find(nodes: list[dict[str, Any]], cid: int) -> dict[str, Any] | None:
 @tool("List categories")
 async def bs_categories(
     parent_id: Annotated[
-        int | None, Field(ge=1, description="Category id to list the children of, e.g. 1 (food). Omit for top level.")
+        int | None, Field(ge=1, description="List its children, e.g. 1 (food); omit for top level.")
     ] = None,
     query: Annotated[
         str | None,
         Field(
             min_length=2,
-            description="Find categories whose title contains this, at any depth (inside parent_id when given), e.g. 'عسل'.",
+            description="Title contains this, any depth (inside parent_id if given), e.g. 'عسل'.",
         ),
     ] = None,
 ) -> dict[str, Any]:
     """Browse Basalam's category tree and return ids for the category_id filter of bs_search.
 
-    Without arguments lists the 12 top-level categories; pass parent_id to go one level down, or query to
-    find a category by name anywhere in the tree (returns its path). With both, query searches only inside
-    parent_id's subtree. Ids at any level work as filters.
+    No arguments lists the top level; query finds a category by name (returns its path).
     """
     tree = await fetch(f"{CORE}/category")
     if query:
