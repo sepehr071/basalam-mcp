@@ -165,22 +165,6 @@ All 7 tools are annotated `readOnlyHint: true` and return compact JSON, so they 
 | `bs_vendor_products` | List one shop's products with prices in Toman, searchable and sortable. |
 | `bs_reviews` | Read customer reviews of a product with the star histogram, newest first. |
 
-## How it works
-
-```text
-  AI agent  (Claude, Cursor, Copilot, ...)
-      │
-      │  MCP over stdio
-      ▼
-  basalam-mcp  (runs on your machine)
-      │
-      │  HTTPS
-      └──────▶  services.basalam.com, core.basalam.com   search, products, shops, reviews
-```
-
-`basalam-mcp` runs locally and calls the same public endpoints the basalam.com web app uses. There is no hosted
-server in between, no API key, and nothing about you is sent anywhere else. Only those two Basalam hosts are allowed.
-
 ## Good to know
 
 - **Prices are in Toman.** The Basalam API answers in Rial; every tool divides by 10 (and price filters are multiplied by 10), so numbers match the website.
